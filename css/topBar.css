@@ -1,0 +1,95 @@
+body {
+  padding-top: 40px; }
+
+.esunlogo {
+  display: inline-block;
+  background: url(../images/headerLogo.png) no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 198px;
+  height: 39px;
+  margin-left: 5px; }
+
+header {
+  background: #f8f8f8;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5; }
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  height: 40px; }
+
+nav {
+  padding: 0 !important; }
+
+.navbar-brand {
+  padding-top: 7px; }
+
+.navbar-toggler {
+  margin-top: -3px; }
+
+.navbar-nav .current {
+  background: #009E96 !important;
+  color: white !important; }
+
+.navbar-collapse a {
+  height: 40px;
+  line-height: 20px; }
+  .navbar-collapse a:hover {
+    background: #009E96 !important;
+    color: white !important;
+    cursor: pointer; }
+  @media (max-width: 767px) {
+    .navbar-collapse a {
+      background: #019D97;
+      border-bottom: 1px solid #00AAA4;
+      color: #fff !important;
+      text-align: center;
+      height: 40px;
+      line-height: 23px; }
+      .navbar-collapse a:hover {
+        background: #00C1BA !important; } }
+
+button:focus {
+  outline: none; }
+
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #009E96;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px; }
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important; }
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%; }
+
+.navbar-toggler .middle-bar {
+  opacity: 0; }
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%; }
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0); }
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1; }
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0); }
+
+@media screen and (min-width: 768px) and (max-width: 830px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    font-size: 14px; } }
