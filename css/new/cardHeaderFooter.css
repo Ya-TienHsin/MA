@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*
+* @data 2015-4-4
+* Author: Linda Lu
+*
+* E.SUN PAY Stylesheet
+--------------------------------
+   1. Sticky Footer
+   2. Footer
+   3. Header
+   4. RWD
+--------------------------------
+*/
+
+body { font-size: 100%; line-height: 100%; font-weight: normal; font-family: Arial,"微軟正黑體","Microsoft JhengHei","新細明體", sans-serif; word-wrap: break-word; }
+html, body, div, span, p, ul, li, input,  table, thead, tr, th, td,
+h1, h2, h3, h4, h5 { margin: 0; padding: 0;line-height: normal; }
+ol,ul { list-style: none; }
+a img, img { border: 0; max-width: 100%; }
+table { width: auto; border-collapse: collapse; border-spacing: 0; }
+.clearfix:after { display: block; content: "."; height: 0; clear: both; visibility: hidden; }
+
+/*=====================================================
+   1. Sticky Footer
+=====================================================*/
+html,body { height: 100%; }
+#wrapper { min-height: 100%; position: relative; }
+#header { height: auto; width: 100%; position: relative; padding: 0; margin: 0 auto; box-sizing: border-box; }
+/* #content { padding: 0 0 250px 0; } */
+#bottomFooter { bottom: 0; left: 0; width: 100%; padding-bottom: 16px; background: url(../../images/headerFooter/footerBg.jpg) repeat-y center bottom; }
+#gotop { display: none; position: fixed; z-index: 9999; right: 20px; bottom: 20px; width: 50px; height: 50px; background: url(../../images/headerFooter/goTop.png) no-repeat; cursor: pointer; }
+
+/*=====================================================
+   2. Footer
+=====================================================*/
+/* 卡處警語 */
+#cardWarning { color: #464646; font-size: 12pt; line-height: 25px; text-align: left; background-color: #f7f7f7; padding: 25px 0; }
+#cardWarning .layer1 { width: 960px; margin: 0 auto; vertical-align: middle; list-style-type: none; }
+#cardWarning .layer1 li { display: inline-block; letter-spacing: -0.01em; text-align: justify; }
+#cardWarning .h3 { width: 278px; height: 31px; background: url(../../images/headerFooter/notice-4word.jpg) no-repeat; }
+#cardWarning .layer2 { width: 65%; float: right; }
+@media screen and (max-width: 960px) {
+	#cardWarning { padding: 0; }
+	#cardWarning .layer1 { display: block; width: 90%; max-width: 900px; margin: 0 auto; padding: 20px 0; }
+	#cardWarning .h3 { width: 100%; background-position: center; }
+	#cardWarning .layer2 { width: 100%; font-size: 14px; line-height: 22px; letter-spacing: 0.01em; }
+}
+
+/* 頁尾資訊 */
+.contact { background: #f7f7f7; text-align: center; color: #464646; padding: 15px 0; list-style-type: none; }
+.contact li { font-size: 13px; line-height: 24px; letter-spacing: 0.06em; }
+.contact li i { font-size: 12px; font-style: normal; padding: 0 5px; color: #999; }
+/* line1 */
+#bottomFooter .service { width: 100%; background: #eee; text-align: center; padding: 15px 0; }
+#bottomFooter .service li { display: inline-block; color: #888; font-size: 13px; margin: 0 5px; }
+#bottomFooter .service li span { margin: 0 5px; }
+#bottomFooter .service li a { color: #009e96; border-left: #888888 1px solid; border-right: #888888 1px solid; padding: 0 15px; }
+/* line2 */
+.anchor { max-height: 47px; line-height: 24px; text-align: center; font-family: Arial,"微軟正黑體","Microsoft JhengHei","新細明體", sans-serif; padding-top: 16px; }
+.anchor li {  display: inline-block; color: #fff; font-size: 14px; padding-left: 0px; }
+.anchor li:before { padding: 0 5px 0 0; }
+.anchor li { display: inline-block; font-size: 13px; font-family: Arial,"微軟正黑體","Microsoft JhengHei","新細明體", sans-serif; line-height: 20px; letter-spacing: 0.06em; }
+.anchor li a { display: inline; font-weight: normal; color: #fff; text-decoration: none; cursor: pointer; }
+.anchor li:before { content: "|"; padding: 0 5px 0 1px; }
+.anchor li.first:before { content: ""; padding: 0 5px 0 0; }
+.anchor li:before { color: #30ABAF; }
+.anchor li i.copyright:after { content: "©"; font-size: 14px; margin: 2px 4px 0 0; }
+@media screen and (max-width: 640px) {
+	/* #content { padding: 0 0 246px 0; } */
+}
+@media screen and (max-width: 532px) {
+  	/* #content { padding: 0 0 273px 0; } */
+	.anchor { width: 90%; padding-left: 5%; padding-right: 5%; padding-top: 10px; }
+}
+@media screen and (max-width: 375px) {
+	/* #content { padding: 0 0 294px 0; } */
+	.anchor { background: #1c4c56; padding-top: 8px; padding-bottom: 8px; }	
+}
+@media screen and (max-width: 360px) {
+	#bottomFooter .service li { display: block; padding: 3px 0; }
+}
+@media screen and (max-width: 320px) {
+	#content { padding: 0 0 325px 0; }
+	.anchor li.last:before { content: ""; padding: 0 0 5px 0; }
+}
+
+/*=====================================================
+   3. Header
+=====================================================*/
+.header { width: 100%; margin: 0 auto;height: 40px; text-align: center; background: #FCFCFC bottom repeat-x; -moz-box-sizing: border-box; box-sizing: border-box; }
+.sysName { display: inline-block; color: #009d99; font-size: 18px; font-weight: bold; line-height: 40px; font-family: Arial,"微軟正黑體","Microsoft JhengHei","新細明體", sans-serif; padding-top: 2px; }
+.header ul { position: relative;;margin: 0 auto; text-align: center; }
+.header li { list-style-type: none; }
+.header li.logo a {position: absolute;margin-left: 20px;top:0px;left: 0px;display: inline-block; width: 198px; height: 40px; vertical-align: middle; background: url(../../images/headerFooter/headerLogo.svg) center no-repeat; }
+.ie8 .header li.logo a { background-image: url(../images/headerFooter/headerLogo.png); }
+.header li.name { color: #009d99; font-size: 18px; font-weight: bold; line-height: 40px; font-family: Arial,"微軟正黑體","Microsoft JhengHei","新細明體", sans-serif; padding: 3px 0 0 15px; cursor: default; }
+.header li.name a { color: #009d99; text-decoration: none; }
+.header li.link { float: right; }
+.header li.link a { display: inline-block; color: #6c6c6c; font-size: 14px; line-height: 42px; text-decoration: none; cursor: pointer; }
+.header li.link:before { display: inline-block; width: 14px; height: 14px; content: url(../../images/headerFooter/headerHomeArrow.png); }
+@media screen and (max-width: 1024px) {
+	.header ul { width: 90%; margin-left: 5%; }
+}
+@media screen and (max-width: 532px) {
+	.header li.link { display: none; }	
+}
+@media screen and (max-width: 360px) {
+	.header .name { display: none; }
+	.header li.logo { background: none; padding-right: 0;}
+}
+
