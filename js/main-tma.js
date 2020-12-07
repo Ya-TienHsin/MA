@@ -1,4 +1,8 @@
 $(document).ready(function () {
+	// AOS
+	AOS.init({
+		once: true
+	});
 	// Top
 	$(window).scroll(function () {
 		if ($(this).scrollTop() >= 50) {

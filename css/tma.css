@@ -23,7 +23,7 @@
 .area-kv {
     padding-top: 40px;
     background-attachment: fixed;
-    height: auto;
+    height: 680px;
     min-height: auto;
 }
 
@@ -40,9 +40,22 @@
     color: #fff;
     padding: 10px 0px;
 }
+.area-flow .flow-module{
+    text-align: center;
+}
+.area-share ul li .share-bg .share-title{
+    color: black;
+}
+.area-flow .flow-module .flow-module1{
+    margin: 0 auto;
+}
+.timeline-container::before{
+    height: 57%;
+}
 .pc-max-width{
     position: relative;
     z-index: 5;
+    max-width: 1100px;
 }
 .fancybox-content {
     width: 80%;
@@ -96,7 +109,23 @@
 .fancybox-bg {
     background: #cfe2df;
 }
-
+.area-flow .flow-decorations.gear-yellow{
+    animation: rotate 24s infinite;
+}
+.area-flow .flow-decorations.gear-pink{
+    animation: rotate 24s infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 .l-title {
     display: block;
     text-align: center;
