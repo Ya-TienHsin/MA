@@ -1,4 +1,8 @@
 $(document).ready(function () {
+	// AOS
+	AOS.init({
+		once: true
+	});
 	// QA
 	var e;
 	e = $(".question dt"), $(".question dd:not(:first)").hide(), e.click((function () {
