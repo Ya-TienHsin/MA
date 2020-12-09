@@ -1,5 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+* {
+  font-family: 'Noto Sans TC', sans-serif, 'Helvetica', '微軟正黑體' !important;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -2999,7 +3004,7 @@ img {
 }
 
 .area-oversea .oversea-branchList li .l-title {
-  color: #009e8e;
+  color: #009e96;
 }
 
 .area-oversea .oversea-branchList li .l-title:hover {
@@ -4226,7 +4231,7 @@ body {
 }
 
 .l-title {
-  color: #00b7ae;
+  color: #14928c;
   font-size: 26px;
 }
 
@@ -4335,12 +4340,7 @@ body {
 }
 
 /* /////////////////////20201127 */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-* {
-  font-family: 'Noto Sans TC', sans-serif, 'Helvetica', '微軟正黑體' !important;
-}
 .sideBtn{
   background-color: #009e96;
   border: solid 1px #fff;
@@ -4549,6 +4549,7 @@ body {
 
 #qualification ul li {
   margin: 5px 0px;
+  font-size: 18px;
 }
 #process{
   padding-top: 50px;
@@ -4568,36 +4569,36 @@ body {
   margin: 20px;
 }
 .process1 div{
-  width: 40%;
+  width: 50%;
 }
 .process1 p{
   margin-top: 10px;
   font-size: 18px;
 }
 .secondPractice .practice:nth-child(1) .l-title{
-  color: #eca263;
+  color: #14375B;
 }
 .secondPractice .practice:nth-child(2) .l-title{
-  color: #2d847f;
+  color: #01b7ae;
 }
 .secondPractice .practice:nth-child(1) .l-paragraph{
-  border-top: 4px solid #fde1ca;
+  border-top: 4px solid #24598E;
 }
 
 .secondPractice .practice:nth-child(2) .l-paragraph{
-  border-top: 4px solid #64ada9;
+  border-top: 4px solid #01b7ae;
 }
 #FAQ{
-  background-color: #4bb7b2;
+  background-color: #F2F2F2;
   margin-top: 50px;
   padding: 50px 0px;
 }
 #FAQ h2{
-  color: #fff;
+  color: #14375B;
+  
 }
 #FAQ p{
   text-align: center;
-  color: #fff;
   width: 80%;
   margin: 0 auto;
   font-size: 18px;
@@ -4611,7 +4612,7 @@ body {
 }
 #FAQ .faqContent dt {
   position: relative;
-  color: #15444c;
+  color: #14375B;
   font-size: 20px;
   font-weight: 500;
   background-color: #fff;
@@ -4641,14 +4642,16 @@ body {
 }
 #FAQ .faqContent dd {
   display: none;
-  padding: 20px 0px;
+  padding-bottom: 20px;
   width: 90%;
   margin-left: 0px;
   padding-left: 20px;
   font-size: 18px;
+  line-height: 28px;
 }
 #FAQ .faqContent dd hr {
   width: 100px;
+  margin-top: 0px;
   margin-left: 0px;
   border: 0px;
   border-bottom: 1px solid #14375B;
@@ -4698,7 +4701,7 @@ body {
     display: none;
   }
   .secondPractice .practice:before {
-    border-right: 5px #efb787 solid;
+    border-right: 5px #24598E solid;
     width: calc(50% - 50px);
     height: 60px;
     top: -60px;
