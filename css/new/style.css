@@ -244,11 +244,11 @@ b {
           top: 0;
           left: 0; }
       #sectionKV .slider_wrap .main_slider .slick-slide:nth-child(1) .item_inner {
-        background-image: url("../images/1_kv/main.jpg"); }
+        background-image: url("../../images/1_kv/main.jpg"); }
       #sectionKV .slider_wrap .main_slider .slick-slide:nth-child(2) .item_inner {
-        background-image: url("../images/1_kv/main2.jpg"); }
+        background-image: url("../../images/1_kv/main2.jpg"); }
       #sectionKV .slider_wrap .main_slider .slick-slide:nth-child(3) .item_inner {
-        background-image: url("../images/1_kv/main3.jpg"); }
+        background-image: url("../../images/1_kv/main3.jpg"); }
   #sectionKV .title {
     position: absolute;
     left: -50px;
@@ -427,7 +427,7 @@ b {
       font-size: 15px; }
   #setionTraining .trainingTitle {
     position: relative;
-    background-image: url("../images/3_training/bgc.png");
+    background-image: url("../../images/3_training/bgc.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -581,7 +581,7 @@ b {
   z-index: 4;
   text-align: center;
   padding: 100px 0px;
-  background: url(../images/section7_bg.png) top right no-repeat #009e96;
+  background: url(../../images/section7_bg.png) top right no-repeat #009e96;
   background-size: 500px; }
   #setionQualification h2 {
     color: #fff;
@@ -707,7 +707,7 @@ b {
       border-bottom: 1px solid #14375B; }
 
 #setionESUN {
-  background-image: url("../images/5_esun/bgc.png");
+  background-image: url("../../images/5_esun/bgc.png");
   background-position: center;
   background-size: cover;
   padding: 120px 0px; }
@@ -997,7 +997,7 @@ b {
     display: none; }
 
 .experienceKV {
-  background-image: url("../images/1_kv/experience_kv.png");
+  background-image: url("../../images/1_kv/experience_kv.png");
   background-size: cover;
   background-position: center;
   height: 500px; }
