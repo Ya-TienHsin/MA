@@ -45,16 +45,18 @@ $(document).ready(function () {
         $(".hamburger").click(function () {
             $(".navbar-nav").slideToggle();
             $(this).toggleClass('active');
-        })
-        $(".navbar-nav li").click(function () {
+        });
+        $(".nav-link").click(function () {
             $(".navbar-nav").slideToggle();
-        })
+            $(".hamburger").toggleClass('active');
+        });
     }
     // QA
     var e;
     e = $(".question dt"), $(".question dd:not(:first)").hide(), e.click((function () {
         $(this).toggleClass("active"), $(this).next("dd").slideToggle("fast")
     }));
+    
     // 專業領域切換
     $(".Overseas").click(function () {
         $(".item").removeClass("show");
