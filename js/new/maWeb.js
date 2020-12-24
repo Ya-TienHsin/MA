@@ -27,15 +27,6 @@ $(document).ready(function () {
         });
     // mobile
     FastClick.attach(document.body);
-    // sidebar
-    if ($(window).width() > 768) {
-        var sidebar = new StickySidebar('.sidebar', {
-            topSpacing: 20,
-            bottomSpacing: 20,
-            containerSelector: '.main-content',
-            innerWrapperSelector: '.sidebar__inner'
-        });
-    }
     if ($(window).width() < 769) {
         $('.boxRetailBanking').append($('.remove1'));
         $('.boxWholesaleBanking').append($('.remove3'));
@@ -111,9 +102,7 @@ $(document).ready(function () {
         }, 500);
     });
     // AOS
-    AOS.init({
-        once: true
-    });
+    AOS.init();
     // 日期倒數
     var startDate = new Date();
     var endDate = new Date(2021, 03, 31, 23, 59);
