@@ -83,7 +83,7 @@ b {
     width: 100%;
     height: 100%;
     z-index: 3;
-    background: rgba(255, 255, 255, 0.4) url(../images/whiteDot.png);
+    background: rgba(255, 255, 255, 0.4) url(../../images/whiteDot.png);
     display: block; }
   #topChoose #videoText {
     position: absolute;
@@ -244,10 +244,12 @@ b {
           top: 0;
           left: 0; }
       #sectionKV .slider_wrap .main_slider .slick-slide:nth-child(1) .item_inner {
-        background-image: url("../../images/1_kv/main.jpg"); }
+        background-image: url("../../images/1_kv/main4.jpg"); }
       #sectionKV .slider_wrap .main_slider .slick-slide:nth-child(2) .item_inner {
         background-image: url("../../images/1_kv/main2.jpg"); }
       #sectionKV .slider_wrap .main_slider .slick-slide:nth-child(3) .item_inner {
+        background-image: url("../../images/1_kv/main.jpg"); }
+      #sectionKV .slider_wrap .main_slider .slick-slide:nth-child(4) .item_inner {
         background-image: url("../../images/1_kv/main3.jpg"); }
   #sectionKV .title {
     position: absolute;
@@ -287,6 +289,8 @@ b {
       position: relative;
       z-index: 2;
       background-color: #fff; }
+    #sectionSpirit .spiritTitle b {
+      margin: 0px; }
   #sectionSpirit .triangle {
     position: absolute;
     width: 400px;
@@ -308,130 +312,188 @@ b {
   background-image: linear-gradient(to top, #009e96 -20%, #206575 100%);
   padding-bottom: 100px; }
   #sectionPorfessinal h2,
-  #sectionPorfessinal b,
-  #sectionPorfessinal p {
+  #sectionPorfessinal b {
     display: block;
     color: #fff; }
+  #sectionPorfessinal h3 {
+    color: #009e96;
+    font-weight: bold;
+    font-size: 24px; }
+  #sectionPorfessinal p {
+    color: #14375B;
+    font-weight: 500; }
+  #sectionPorfessinal hr {
+    width: 20%;
+    text-align: left;
+    margin-left: 0px;
+    border-width: 0px;
+    border-bottom: 1px solid #009e96; }
   #sectionPorfessinal .porfessinalTitle {
     padding: 60px 10px; }
     #sectionPorfessinal .porfessinalTitle h2,
     #sectionPorfessinal .porfessinalTitle b {
       text-align: center; }
-  #sectionPorfessinal .main-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; }
-    #sectionPorfessinal .main-content .remove h3 {
-      color: #82C4C1;
-      font-weight: 500; }
-    #sectionPorfessinal .main-content .remove ul li {
-      color: #CCE2E0;
-      margin: 10px 0px;
+  #sectionPorfessinal .content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto; }
+  #sectionPorfessinal .field {
+    position: relative;
+    width: 500px;
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer; }
+    #sectionPorfessinal .field:hover {
+      transform: translateY(-5px);
       cursor: pointer; }
-      #sectionPorfessinal .main-content .remove ul li:hover svg {
-        transform: translateX(10px); }
-      #sectionPorfessinal .main-content .remove ul li svg {
-        width: 20px;
-        vertical-align: middle;
-        margin: 5px;
-        margin-top: 2px;
-        transition: 0.5s; }
-    #sectionPorfessinal .main-content .remove hr {
-      border-width: 0px;
-      height: 1px;
-      border-bottom: 1px solid #82C4C1;
-      width: 80%;
-      margin: 20px auto;
-      margin-left: 0px; }
-    #sectionPorfessinal .main-content .left {
-      position: relative; }
-      #sectionPorfessinal .main-content .left .item {
-        position: relative;
-        z-index: 2;
-        display: none;
-        padding-top: 50px; }
-      #sectionPorfessinal .main-content .left .backgroundText {
-        position: absolute;
-        left: -200px;
-        top: -200px; }
-        #sectionPorfessinal .main-content .left .backgroundText h2 {
-          font-family: 'Satisfy', cursive;
-          font-size: 400px;
-          color: #fff;
-          background-color: transparent;
-          opacity: 0.06;
-          white-space: nowrap; }
-      #sectionPorfessinal .main-content .left p {
+      #sectionPorfessinal .field:hover svg .opacity {
+        fill: #24598E; }
+      #sectionPorfessinal .field:hover svg .blue {
+        fill: #fff; }
+      #sectionPorfessinal .field:hover img {
+        transform: translate(-10px, -15px); }
+    #sectionPorfessinal .field svg {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      transition: 0.3s; }
+    #sectionPorfessinal .field img {
+      width: 200px;
+      display: inline-block;
+      vertical-align: middle;
+      transform: translate(-10px, -10px);
+      transition: 0.3s; }
+    #sectionPorfessinal .field .fieldContent {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px; }
+
+.Bno.fancybox-content .close {
+  border: none;
+  height: 40px;
+  top: 20px; }
+
+.Bno {
+  font-size: 0px;
+  padding: 0px; }
+  .Bno .fancyboxOut {
+    display: block; }
+  .Bno .left {
+    background-image: linear-gradient(to top, #009e96 -20%, #206575 100%);
+    width: 40%;
+    height: 100vh;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top; }
+    .Bno .left .leftInner {
+      width: 70%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      padding-top: 60px;
+      box-sizing: border-box !important; }
+      .Bno .left .leftInner h3 {
+        font-size: 36px;
+        margin-bottom: 5px; }
+      .Bno .left .leftInner h4 {
+        font-weight: 400; }
+      .Bno .left .leftInner p {
+        margin: 20px 0px;
         line-height: 30px; }
-    #sectionPorfessinal .main-content .right .item {
-      display: none; }
-    #sectionPorfessinal .main-content .right .boxOverseas {
-      position: relative;
-      font-size: 0px; }
-      #sectionPorfessinal .main-content .right .boxOverseas div {
-        position: absolute;
-        width: 200px;
-        height: 100%;
-        background-color: #153e64;
-        right: -280px;
-        top: 0px;
-        transform: scale(1.2); }
-      #sectionPorfessinal .main-content .right .boxOverseas img {
-        transform: scale(1.2); }
-    #sectionPorfessinal .main-content .right .box {
-      margin: 40px 0px; }
-      #sectionPorfessinal .main-content .right .box .text_box {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: nowrap; }
-        #sectionPorfessinal .main-content .right .box .text_box img {
-          width: 80px;
-          margin: 0 auto; }
-        #sectionPorfessinal .main-content .right .box .text_box .t {
-          background-color: #fff;
-          width: 70%;
-          margin: 0 auto;
-          margin-right: 0px;
-          margin-top: -40px;
-          border-radius: 8px;
-          height: 160px;
-          padding: 30px; }
-          #sectionPorfessinal .main-content .right .box .text_box .t hr {
-            width: 200px;
-            margin: 20px auto;
-            margin-left: 0px;
-            border-width: 0px;
-            height: 1px;
-            border-bottom: 2px solid #009e96; }
-          #sectionPorfessinal .main-content .right .box .text_box .t span {
-            font-size: 26px;
-            font-weight: 500;
-            color: #14375B;
-            display: block; }
-    #sectionPorfessinal .main-content .btn {
-      background-color: #fff;
-      color: #14375B;
-      font-size: 18px;
-      margin: 30px 0px; }
+      .Bno .left .leftInner .btn {
+        position: relative;
+        color: #14375B;
+        font-size: 18px;
+        z-index: 2;
+        height: 70px;
+        cursor: pointer;
+        background-color: #fff;
+        transition: 0.2s;
+        box-shadow: 0px 2px 3px #14375B; }
+        .Bno .left .leftInner .btn p {
+          padding: 10px;
+          font-weight: 500; }
+        .Bno .left .leftInner .btn span {
+          font-size: 15px; }
+        .Bno .left .leftInner .btn:hover {
+          transform: translateY(5px);
+          box-shadow: none; }
+          .Bno .left .leftInner .btn:hover svg .blue {
+            fill: #fff; }
+          .Bno .left .leftInner .btn:hover svg .opacity {
+            fill: #14375B; }
+  .Bno .right {
+    width: 60%;
+    vertical-align: top;
+    display: inline-block;
+    max-height: 100vh;
+    overflow: scroll; }
+    .Bno .right .item {
+      width: 45%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px; }
+      .Bno .right .item div {
+        display: block;
+        border-radius: 10px;
+        overflow: hidden; }
+      .Bno .right .item h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #14375B;
+        padding: 5px 0px; }
+      .Bno .right .item hr {
+        width: 20%;
+        text-align: left;
+        margin-left: 0px;
+        border-width: 0px;
+        border-bottom: 1px solid #CCE2E0; }
+      .Bno .right .item p {
+        padding: 10px 0px;
+        font-size: 16px; }
+    .Bno .right .map {
+      width: 95%;
+      margin-top: 25px; }
+    .Bno .right .rightInner {
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 50px; }
 
 #setionTraining {
   padding-bottom: 100px;
   position: relative;
   z-index: 4;
   background-color: #fff; }
+  #setionTraining a {
+    cursor: pointer; }
   #setionTraining .btn {
-    height: 70px; }
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 auto;
+    z-index: 2;
+    height: 70px;
+    cursor: pointer;
+    background-color: #14375B; }
     #setionTraining .btn p {
       padding: 10px; }
     #setionTraining .btn span {
       font-size: 15px; }
+    #setionTraining .btn:hover {
+      transform: translateY(-10px);
+      background-color: #24598E; }
   #setionTraining .trainingTitle {
     position: relative;
     background-image: url("../../images/3_training/bgc.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 350px;
+    height: 500px;
     width: 100%; }
     #setionTraining .trainingTitle .container {
       position: relative;
@@ -469,8 +531,7 @@ b {
       padding-left: 40px;
       margin: 20px 50px;
       vertical-align: middle;
-      text-align: left;
-      transition: 0.5s; }
+      text-align: left; }
       #setionTraining .trainingContent .block:hover {
         transform: translateY(-5px); }
       #setionTraining .trainingContent .block .target {
@@ -558,13 +619,6 @@ b {
         background-color: #009e96; }
     #setionTraining .trainingContent .block:nth-child(5):hover, #setionTraining .trainingContent .block:nth-child(6):hover {
       transform: none; }
-  #setionTraining .btn {
-    position: relative;
-    z-index: 2;
-    background-color: #24598E;
-    color: #fff;
-    font-size: 18px;
-    margin: 0 auto; }
 
 #wave {
   position: relative;
@@ -1133,8 +1187,6 @@ b {
     width: 40%; } }
 
 @media (max-width: 1440px) {
-  #sectionPorfessinal .main-content .left .backgroundText h2 {
-    font-size: 350px; }
   #setionFAQ .container {
     width: 80%; } }
 
@@ -1154,9 +1206,15 @@ b {
     height: 100px;
     line-height: 100px; }
   #setionQualification .month:nth-last-child(1) div {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .Bno .right .rightInner {
+    margin-top: 70px; } }
 
 @media (max-width: 1024px) {
+  .Bno .left .leftInner {
+    width: 85%; }
+  .Bno .right .item {
+    width: 80%; }
   .experience .firstTab a {
     font-size: 24px; }
   .experience .secondTab dd {
@@ -1212,6 +1270,17 @@ b {
       max-width: 70%; } }
 
 @media (max-width: 768px) {
+  #sectionPorfessinal .field {
+    width: 300px;
+    margin: 20px 0px; }
+    #sectionPorfessinal .field .fieldContent {
+      margin-left: 0px;
+      padding-bottom: 10px;
+      padding-left: 10px; }
+    #sectionPorfessinal .field img {
+      display: block;
+      margin: 10px auto;
+      transform: translateY(0px); }
   #topChoose .item1 {
     width: 140px; }
   #topChoose .start {
@@ -1255,44 +1324,24 @@ b {
     margin-left: 18vw; }
   #sectionPorfessinal .porfessinalTitle {
     padding: 30px 10px; }
-  #sectionPorfessinal .main-content {
-    flex-direction: column; }
-    #sectionPorfessinal .main-content .remove ul li {
-      display: inline-block;
-      font-size: 18px;
-      margin-bottom: 0px; }
-    #sectionPorfessinal .main-content .left {
-      width: 100%; }
-      #sectionPorfessinal .main-content .left .backgroundText {
-        top: 0px; }
-    #sectionPorfessinal .main-content .right {
-      width: 100%; }
-      #sectionPorfessinal .main-content .right .boxOverseas img {
-        transform: scale(1); }
-      #sectionPorfessinal .main-content .right .boxOverseas div {
-        display: none; }
-      #sectionPorfessinal .main-content .right .boxOverseas .remove {
-        display: block;
-        position: relative;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        transform: scale(1);
-        right: auto; }
-  #setionQualification .month {
-    padding: 0px 0px; }
-  #setionQualification .process .container {
-    flex-wrap: wrap;
-    padding: 30px 0px; }
-  #setionQualification ul {
-    margin: 0px 50px;
-    margin-bottom: 50px;
-    list-style: disc; }
-    #setionQualification ul li {
-      text-align: left;
-      line-height: 40px; }
-  #setionQualification ul li::before {
-    display: none; }
+  #setionQualification {
+    padding: 140px 0px; }
+    #setionQualification h2 {
+      width: 90%; }
+    #setionQualification .month {
+      padding: 0px 0px; }
+    #setionQualification .process .container {
+      flex-wrap: wrap;
+      padding: 30px 0px; }
+    #setionQualification ul {
+      margin: 0px;
+      margin-bottom: 50px;
+      list-style: disc; }
+      #setionQualification ul li {
+        text-align: left;
+        line-height: 40px; }
+    #setionQualification ul li::before {
+      display: none; }
   #setionFAQ .container {
     width: 90%; }
   .experienceKV {
@@ -1374,15 +1423,11 @@ b {
     #topChoose .item1 p {
       min-height: auto;
       font-size: 16px; }
+  #setionQualification b {
+    display: block;
+    margin: 0px; }
   #sectionPorfessinal {
     padding-bottom: 20px; }
-    #sectionPorfessinal .main-content .right .box .text_box .t {
-      height: auto; }
-      #sectionPorfessinal .main-content .right .box .text_box .t span {
-        font-size: 22px; }
-      #sectionPorfessinal .main-content .right .box .text_box .t hr {
-        margin: 10px auto;
-        margin-left: 0px; }
   #sectionSpirit .container div:nth-child(2) {
     margin-left: 8vw; }
   #sectionSpirit ul li h3 {
@@ -1409,20 +1454,47 @@ b {
       max-height: 400px;
       overflow: scroll;
       margin-bottom: 100px;
-      padding-top: 10px; } }
-
-@media (min-width: 769px) {
-  #sectionPorfessinal .main-content .right {
-    position: relative;
-    z-index: 2;
-    width: 55%;
-    max-width: 667px;
-    padding-top: 100px;
-    padding-bottom: 100px; }
-  #sectionPorfessinal .main-content .left {
-    position: relative;
-    width: 400px;
-    z-index: 2; } }
+      padding-top: 10px; }
+  .Bno.fancybox-content {
+    padding: 0px; }
+    .Bno.fancybox-content .close {
+      right: 20px; }
+    .Bno.fancybox-content .close:before {
+      background-color: #fff; }
+    .Bno.fancybox-content .close:after {
+      background-color: #fff; }
+  .Bno .left {
+    width: 100%;
+    height: auto; }
+    .Bno .left .leftInner {
+      padding: 20px; }
+      .Bno .left .leftInner h3 {
+        font-size: 30px; }
+      .Bno .left .leftInner p {
+        line-height: 26px;
+        font-size: 16px; }
+  .Bno .right {
+    text-align: center;
+    width: 100%;
+    overflow: initial; }
+    .Bno .right .rightInner {
+      margin: 20px auto; }
+    .Bno .right .item {
+      width: 90%; }
+      .Bno .right .item p {
+        text-align: left; }
+      .Bno .right .item h4 {
+        text-align: left; }
+    .Bno .right .map {
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden; }
+      .Bno .right .map img {
+        max-width: 125%; }
+    .Bno .right .mapOut {
+      width: 100%;
+      margin: 0px; } }
 
 @media (max-width: 500px) {
   #topChoose #videoText .title {
@@ -1433,28 +1505,33 @@ b {
   .slick-slide.moving .item_inner {
     background-position: right !important; }
   #sectionKV .slider_wrap .main_slider .slider_item {
-    height: 500px; }
+    height: 400px; }
+  #sectionKV .title {
+    bottom: 0px; }
   #sectionKV .mainKV {
     height: 500px; }
   #sectionKV .title p {
     font-size: 20px;
     padding-right: 5px; }
-  #sectionSpirit ul li {
-    flex-direction: column;
-    align-items: baseline; }
-  #sectionSpirit .container div:nth-child(2) {
-    margin-left: 0px; }
-  #sectionSpirit .triangle {
-    width: 255px;
-    top: -120px;
-    left: 100px; }
+  #sectionSpirit {
+    padding: 0px; }
+    #sectionSpirit ul li {
+      flex-direction: column;
+      align-items: baseline; }
+    #sectionSpirit .container div:nth-child(2) {
+      margin-left: 0px; }
+    #sectionSpirit .triangle {
+      width: 240px;
+      top: -120px;
+      left: 100px; }
   #setionTraining .trainingTitle {
     height: 300px; }
   #setionTraining .trainingContent .block {
     width: 220px;
     padding-top: 80px; }
     #setionTraining .trainingContent .block:after {
-      left: -55px !important; }
+      left: -55px !important;
+      height: 120% !important; }
     #setionTraining .trainingContent .block:before {
       left: -40px !important; }
   #setionTraining .trainingTitle .titleInner {
@@ -1495,10 +1572,6 @@ b {
     padding: 10px 10px; } }
 
 @media (max-width: 375px) {
-  #sectionPorfessinal .main-content .right .box .text_box .t {
-    padding: 20px; }
-  #sectionPorfessinal .main-content .right .box .text_box img {
-    width: 0px; }
   #setionTraining .trainingContent .block {
     width: 180px; } }
 
