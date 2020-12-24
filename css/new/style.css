@@ -1407,7 +1407,7 @@ b {
       color: #24598E; }
   .fancyboxOut {
     flex-direction: column; }
-    #setionTraining.trainingTitle{
+    #setionTraining .trainingTitle{
       background-attachment: initial;
   } }
 
