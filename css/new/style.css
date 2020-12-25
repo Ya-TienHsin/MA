@@ -492,7 +492,6 @@ b {
     background-image: url("../../images/3_training/bgc.png");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     height: 500px;
     width: 100%; }
     #setionTraining .trainingTitle .container {
@@ -1407,9 +1406,7 @@ b {
       color: #24598E; }
   .fancyboxOut {
     flex-direction: column; }
-    #setionTraining .trainingTitle{
-      background-attachment: initial;
-  } }
+ }
 
 @media (max-width: 600px) {
   #topChoose .btnAll {
