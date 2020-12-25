@@ -1092,7 +1092,8 @@ b {
   top: 0px;
   background: transparent;
   color: black;
-  font-size: 0px; }
+  font-size: 0px;
+  z-index: 999; }
   .fancybox-content .close:focus {
     outline: none; }
   .fancybox-content .close:before {
