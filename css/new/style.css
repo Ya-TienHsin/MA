@@ -1477,7 +1477,7 @@ b {
   .Bno .right {
     text-align: center;
     width: 100%;
-    overflow: initial; }
+    overflow: auto; }
     .Bno .right .rightInner {
       margin: 20px auto; }
     .Bno .right .item {
