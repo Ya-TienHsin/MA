@@ -465,160 +465,166 @@ b {
       margin: 0 auto;
       margin-top: 50px; }
 
-#setionTraining {
-  padding-bottom: 100px;
-  position: relative;
-  z-index: 4;
-  background-color: #fff; }
-  #setionTraining a {
-    cursor: pointer; }
-  #setionTraining .btn {
-    position: relative;
-    color: #fff;
-    font-size: 18px;
-    margin: 0 auto;
-    z-index: 2;
-    height: 70px;
-    cursor: pointer;
-    background-color: #14375B; }
-    #setionTraining .btn p {
-      padding: 10px; }
-    #setionTraining .btn span {
-      font-size: 15px; }
-    #setionTraining .btn:hover {
-      transform: translateY(-10px);
-      background-color: #24598E; }
-  #setionTraining .trainingTitle {
-    position: relative;
-    background-image: url("../../images/3_training/bgc.png");
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    width: 100%; }
-    #setionTraining .trainingTitle .container {
-      position: relative;
-      height: 100%; }
-    #setionTraining .trainingTitle .titleInner {
-      position: absolute;
-      left: 0px;
-      bottom: 0px;
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-      width: 500px;
-      background-color: #fff; }
-      #setionTraining .trainingTitle .titleInner::before {
-        content: "";
-        width: 300px;
-        height: 97.56px;
-        position: absolute;
-        left: -300px;
-        top: 0px;
-        z-index: 2;
-        display: block;
+      #setionTraining {
+        padding-bottom: 100px;
+        position: relative;
+        z-index: 4;
         background-color: #fff; }
-  #setionTraining .trainingContent {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 50px; }
-    #setionTraining .trainingContent .block {
-      position: relative;
-      background-color: #F4F4F4;
-      display: inline-block;
-      width: 400px;
-      padding: 30px;
-      padding-left: 40px;
-      margin: 20px 50px;
-      vertical-align: middle;
-      text-align: left; }
-      #setionTraining .trainingContent .block:hover {
-        transform: translateY(-5px); }
-      #setionTraining .trainingContent .block .target {
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 0px 20px 30px 20px;
-        border-color: transparent transparent #F4F4F4 transparent; }
-      #setionTraining .trainingContent .block:nth-child(even) {
-        margin-top: 80px; }
-        #setionTraining .trainingContent .block:nth-child(even) .target {
-          left: -20px;
-          top: 50%;
-          transform: translateY(-50%); }
-        #setionTraining .trainingContent .block:nth-child(even):before {
-          position: absolute;
-          content: "";
-          width: 15px;
-          height: 15px;
-          border-radius: 15px;
-          background-color: #ddd;
-          left: -58px;
-          top: 50%;
-          transform: translateY(-50%);
-          z-index: 2; }
-      #setionTraining .trainingContent .block:nth-child(odd) .target {
-        right: -20px;
-        top: 50%;
-        transform: translateY(-50%); }
-      #setionTraining .trainingContent .block:nth-child(odd):before {
-        position: absolute;
-        z-index: 2;
-        content: "";
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        background-color: #ddd;
-        right: -61px;
-        top: 50%;
-        transform: translateY(-50%); }
-      #setionTraining .trainingContent .block:nth-child(odd):after {
-        position: absolute;
-        content: "";
-        border-right: 1.5px solid #A5A5A5;
-        width: 20px;
-        height: 100%;
-        right: -54px;
-        top: 96px; }
-      #setionTraining .trainingContent .block:nth-child(3):after, #setionTraining .trainingContent .block:nth-child(5):after {
-        position: absolute;
-        content: "";
-        width: 20px;
-        height: 150%;
-        right: -54px;
-        top: -20px; }
-      #setionTraining .trainingContent .block:nth-child(1):before {
-        background-color: #009e96; }
-      #setionTraining .trainingContent .block:nth-child(2):before {
-        background-color: #009e96; }
-      #setionTraining .trainingContent .block:nth-child(3):before {
-        background-color: #077880; }
-      #setionTraining .trainingContent .block:nth-child(4):before {
-        background-color: #096D7A; }
-      #setionTraining .trainingContent .block:nth-child(5):before {
-        background-color: #24598E; }
-      #setionTraining .trainingContent .block:nth-child(6):before {
-        background-color: #14375B; }
-      #setionTraining .trainingContent .block .label {
-        position: absolute;
-        right: 0px;
-        top: 20px;
-        background-color: #24598E;
-        display: inline-block;
-        color: #fff;
-        padding: 5px; }
-      #setionTraining .trainingContent .block h3 {
-        color: #14375B;
-        margin-bottom: 20px; }
-      #setionTraining .trainingContent .block ul li {
-        list-style: disc; }
-      #setionTraining .trainingContent .block:nth-child(5) h3, #setionTraining .trainingContent .block:nth-child(6) h3 {
-        color: #009e96; }
-      #setionTraining .trainingContent .block:nth-child(5) .label, #setionTraining .trainingContent .block:nth-child(6) .label {
-        background-color: #009e96; }
-    #setionTraining .trainingContent .block:nth-child(5):hover, #setionTraining .trainingContent .block:nth-child(6):hover {
-      transform: none; }
+        #setionTraining a {
+          cursor: pointer; }
+        #setionTraining .btn {
+          position: relative;
+          color: #fff;
+          font-size: 18px;
+          margin: 0 auto;
+          margin-top: 80px;
+          z-index: 2;
+          height: 70px;
+          cursor: pointer;
+          background-color: #14375B; }
+          #setionTraining .btn p {
+            padding: 10px; }
+          #setionTraining .btn span {
+            font-size: 15px; }
+          #setionTraining .btn:hover {
+            transform: translateY(-10px);
+            background-color: #24598E; }
+        #setionTraining .trainingTitle {
+          position: relative;
+          background-image: url("../../images/3_training/bgc.png");
+          background-position: center;
+          background-size: cover;
+          height: 500px;
+          width: 100%; }
+          #setionTraining .trainingTitle .container {
+            position: relative;
+            height: 100%; }
+          #setionTraining .trainingTitle .titleInner {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            width: 500px;
+            background-color: #fff; }
+            #setionTraining .trainingTitle .titleInner::before {
+              content: "";
+              width: 300px;
+              height: 97.56px;
+              position: absolute;
+              left: -300px;
+              top: 0px;
+              z-index: 2;
+              display: block;
+              background-color: #fff; }
+        #setionTraining .trainingContent {
+          max-width: 1200px;
+          margin: 0 auto;
+          text-align: center;
+          padding-bottom: 50px; }
+          #setionTraining .trainingContent .block {
+            position: relative;
+            background-color: #F4F4F4;
+            display: inline-block;
+            width: 400px;
+            padding: 30px;
+            padding-left: 40px;
+            margin: 20px 50px;
+            vertical-align: middle;
+            text-align: left; }
+            #setionTraining .trainingContent .block:hover {
+              transform: translateY(-5px); }
+            #setionTraining .trainingContent .block .target {
+              position: absolute;
+              width: 0px;
+              height: 0px;
+              border-style: solid;
+              border-width: 0px 20px 30px 20px;
+              border-color: transparent transparent #F4F4F4 transparent; }
+            #setionTraining .trainingContent .block:nth-child(even) {
+              margin-top: 80px;
+              transform: translateY(100px); }
+              #setionTraining .trainingContent .block:nth-child(even) .target {
+                left: -20px;
+                top: 50%;
+                transform: translateY(-50%); }
+              #setionTraining .trainingContent .block:nth-child(even):hover {
+                transform: translateY(95px); }
+              #setionTraining .trainingContent .block:nth-child(even):before {
+                position: absolute;
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-radius: 15px;
+                background-color: #ddd;
+                left: -58px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2; }
+            #setionTraining .trainingContent .block:nth-child(odd) .target {
+              right: -20px;
+              top: 50%;
+              transform: translateY(-50%); }
+            #setionTraining .trainingContent .block:nth-child(odd):before {
+              position: absolute;
+              z-index: 2;
+              content: "";
+              width: 15px;
+              height: 15px;
+              border-radius: 15px;
+              background-color: #ddd;
+              right: -61px;
+              top: 50%;
+              transform: translateY(-50%); }
+            #setionTraining .trainingContent .block:nth-child(odd):after {
+              position: absolute;
+              content: "";
+              border-right: 1.5px solid #A5A5A5;
+              width: 20px;
+              height: 100%;
+              right: -54px;
+              top: 96px; }
+            #setionTraining .trainingContent .block:nth-child(3):after, #setionTraining .trainingContent .block:nth-child(5):after {
+              position: absolute;
+              content: "";
+              width: 20px;
+              height: 150%;
+              right: -54px;
+              top: -20px; }
+            #setionTraining .trainingContent .block:nth-child(1):before {
+              background-color: #009e96; }
+            #setionTraining .trainingContent .block:nth-child(2):before {
+              background-color: #009e96; }
+            #setionTraining .trainingContent .block:nth-child(3):before {
+              background-color: #077880; }
+            #setionTraining .trainingContent .block:nth-child(4):before {
+              background-color: #096D7A; }
+            #setionTraining .trainingContent .block:nth-child(5):before {
+              background-color: #24598E; }
+            #setionTraining .trainingContent .block:nth-child(6):before {
+              background-color: #14375B; }
+            #setionTraining .trainingContent .block .label {
+              position: absolute;
+              right: 0px;
+              top: 20px;
+              background-color: #24598E;
+              display: inline-block;
+              color: #fff;
+              padding: 5px; }
+            #setionTraining .trainingContent .block h3 {
+              color: #14375B;
+              margin-bottom: 20px; }
+            #setionTraining .trainingContent .block ul li {
+              list-style: disc; }
+            #setionTraining .trainingContent .block:nth-child(5) h3, #setionTraining .trainingContent .block:nth-child(6) h3 {
+              color: #009e96; }
+            #setionTraining .trainingContent .block:nth-child(5) .label, #setionTraining .trainingContent .block:nth-child(6) .label {
+              background-color: #009e96; }
+          #setionTraining .trainingContent .block:nth-child(5):hover, #setionTraining .trainingContent .block:nth-child(6):hover {
+            transform: none; }
+          #setionTraining .trainingContent .block:nth-child(6):hover {
+            transform: translateY(100px); }
 
 #wave {
   position: relative;
@@ -1232,6 +1238,8 @@ b {
     height: 150px; } }
 
 @media (max-width: 850px) {
+  #setionTraining .btn {
+    margin-top: 0px; }
   #setionTraining .trainingContent {
     padding-top: 50px; }
     #setionTraining .trainingContent .block {
@@ -1260,9 +1268,14 @@ b {
         left: -72px;
         right: auto;
         height: 246%; }
-      #setionTraining .trainingContent .block:nth-child(even) {
-        margin-top: 40px;
-        margin-bottom: 40px; }
+        #setionTraining .trainingContent .block:nth-child(even) {
+          margin-top: 40px;
+          margin-bottom: 40px;
+          transform: translateY(0px); }
+          #setionTraining .trainingContent .block:nth-child(even):hover {
+            transform: translateY(-5px); }
+        #setionTraining .trainingContent .block:nth-child(6):hover {
+          transform: translateY(0px); }
   #setionQualification {
     background-size: 300px; }
   .experience .tabsContent .card {
