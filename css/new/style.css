@@ -1289,6 +1289,11 @@ b {
     text-align: center; }
   .return {
     left: -115px; }
+    .return a {
+      padding: 10px 10px; }
+      .return a svg {
+        margin-right: 0px;
+        margin-left: 10px; }
   .flex {
     display: flex; }
   h2 {
@@ -1408,6 +1413,7 @@ b {
       color: #24598E; }
   .fancyboxOut {
     flex-direction: column; }
+
  }
 
 @media (max-width: 600px) {
@@ -1440,11 +1446,6 @@ b {
     left: -38px;
     top: 110px;
     height: 250%; }
-  .return a {
-    padding: 10px 10px; }
-    .return a svg {
-      margin-right: 0px;
-      margin-left: 10px; }
   .experience .tabsContent #sideProfessional .Professional1 {
     width: 100%; }
   .experience .firstTab a {
@@ -1457,7 +1458,9 @@ b {
       max-height: 450px;
       overflow: scroll;
       margin-bottom: 100px;
-      padding-top: 10px; }
+      padding-top: 10px;
+      padding-left: 0px;
+      padding-bottom: 10px; }
   .Bno.fancybox-content {
     padding: 0px;height: 100%; }
     .Bno.fancybox-content .close {
@@ -1554,6 +1557,12 @@ b {
   .experienceKV {
     height: 326px;
     background-position: right; }
+  .experience #sideTraining .cut{
+    padding: 20px 0px;
+  }
+  .experience #sideTraining .cut:before{
+    display: none;
+  }
   .experience .secondTab dd {
     width: 40%; }
   .experience #sectionKV .title {

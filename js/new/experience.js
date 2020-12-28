@@ -1,5 +1,5 @@
 $(document).ready(function () {
-      // Top
+    // Top
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 50) {
             $('#top').fadeIn("fast");
@@ -17,13 +17,13 @@ $(document).ready(function () {
         }, 500);
     });
     // Menu
-    $('.navProfessional').click(function(){
+    $('.navProfessional').click(function () {
         $("#sideTraining").removeClass("active");
         $(".trainingMenu").removeClass("active");
         $(".professionalMenu").addClass("active");
         $("#sideProfessional").addClass("active");
     })
-    $('.navTraining').click(function(){
+    $('.navTraining').click(function () {
         $("#sideTraining").addClass("active");
         $(".trainingMenu").addClass("active");
         $(".professionalMenu").removeClass("active");
@@ -55,7 +55,7 @@ $(document).ready(function () {
         var h = Math.floor((spantime % (24 * 3600)) / 3600);
         var m = Math.floor((spantime % 3600) / (60));
         var s = Math.floor(spantime % 60);
-        str = d ;
+        str = d;
         document.getElementById("pad").innerHTML = str;
     };
 
@@ -88,21 +88,43 @@ $(document).ready(function () {
         $("#sideProfessional").addClass("active");
         $("#sideTraining").removeClass("active");
     });
-    var url=window.location.href.split("#")[1]
-    var a = ['program1','program2','program3','program4','sideTraining'];
-    var b = ['MultifiledRotation','Overseas','WholesaleBanking','RetailBanking'];
-    
+    var url = window.location.href.split("#")[1]
+    var a = ['program1', 'program2', 'program3', 'program4', 'sideTraining'];
+    var b = ['MultifiledRotation', 'Overseas', 'WholesaleBanking', 'RetailBanking'];
+
     if (url == a[0] | url == a[1] | url == a[2] | url == a[3] | url == a[4]) {
         $("#sideTraining").addClass("active");
         $(".trainingMenu").addClass("active");
         $(".professionalMenu").removeClass("active");
         $("#sideProfessional").removeClass("active");
     };
+    if (url == a[0]){
+        $("html,body").animate({
+            scrollTop: $("#program1").offset().top - 200
+        }, 500);
+    }
+    if (url == a[1]){
+        $("html,body").animate({
+            scrollTop: $("#program2").offset().top - 200
+        }, 500);
+    }
+    if (url == a[2]){
+        $("html,body").animate({
+            scrollTop: $("#program3").offset().top - 200
+        }, 500);
+    }
+    if (url == a[3]){
+        $("html,body").animate({
+            scrollTop: $("#program4").offset().top - 200
+        }, 500);
+    }
     if (url == b[0] | url == b[1] | url == b[2] | url == b[3]) {
         $("#sideTraining").removeClass("active");
         $(".trainingMenu").removeClass("active");
         $(".professionalMenu").addClass("active");
         $("#sideProfessional").addClass("active");
+        $("html,body").animate({
+            scrollTop: $(".tabs-content").offset().top - 200
+        }, 500);
     }
-
 });
