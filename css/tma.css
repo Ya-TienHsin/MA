@@ -23,7 +23,7 @@
 .area-kv {
     padding-top: 40px;
     background-attachment: fixed;
-    height: 800px;
+    height: 700px;
     min-height: auto;
 }
 
@@ -190,7 +190,7 @@
 .timeline-bg{
     padding-bottom: 31px;
 }
-#particles-js{
+#particles-js,#particles-js2{
     position: absolute;
     width: 100%;
     height: 100%;

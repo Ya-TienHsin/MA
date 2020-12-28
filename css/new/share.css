@@ -65,7 +65,12 @@
   position: fixed;
   z-index: 99999;
   top: 0px; }
-
+  .header ul{
+    z-index: 5;
+  }
+.header ul.navbar-nav{
+  z-index: 4;
+}
 .navbar-nav {
   display: flex;
   justify-content: flex-end;
