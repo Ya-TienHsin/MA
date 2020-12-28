@@ -1449,12 +1449,8 @@ b {
   .experience .firstTab a {
     font-size: 20px; }
   .fancybox-content {
-<<<<<<< HEAD
     padding:0px 20px;
     height: 80%; }
-=======
-    padding: 20px; }
->>>>>>> a16276d08fcb3d83ac59a0080a6197f7dc31fc09
     .fancybox-content .diary {
       font-size: 16px;
       max-height: 450px;
