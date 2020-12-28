@@ -27,15 +27,6 @@ $(document).ready(function () {
         });
     // mobile
     FastClick.attach(document.body);
-    // sidebar
-    if ($(window).width() > 768) {
-        var sidebar = new StickySidebar('.sidebar', {
-            topSpacing: 20,
-            bottomSpacing: 20,
-            containerSelector: '.main-content',
-            innerWrapperSelector: '.sidebar__inner'
-        });
-    }
     if ($(window).width() < 769) {
         $('.boxRetailBanking').append($('.remove1'));
         $('.boxWholesaleBanking').append($('.remove3'));
@@ -45,16 +36,18 @@ $(document).ready(function () {
         $(".hamburger").click(function () {
             $(".navbar-nav").slideToggle();
             $(this).toggleClass('active');
-        })
-        $(".navbar-nav li").click(function () {
+        });
+        $(".nav-link").click(function () {
             $(".navbar-nav").slideToggle();
-        })
+            $(".hamburger").toggleClass('active');
+        });
     }
     // QA
     var e;
     e = $(".question dt"), $(".question dd:not(:first)").hide(), e.click((function () {
         $(this).toggleClass("active"), $(this).next("dd").slideToggle("fast")
     }));
+    
     // 專業領域切換
     $(".Overseas").click(function () {
         $(".item").removeClass("show");
@@ -109,9 +102,7 @@ $(document).ready(function () {
         }, 500);
     });
     // AOS
-    AOS.init({
-        once: true
-    });
+    AOS.init();
     // 日期倒數
     var startDate = new Date();
     var endDate = new Date(2021, 03, 31, 23, 59);
