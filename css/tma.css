@@ -23,7 +23,7 @@
 .area-kv {
     padding-top: 40px;
     background-attachment: fixed;
-    height: 680px;
+    height: 800px;
     min-height: auto;
 }
 
@@ -243,6 +243,11 @@
 
     .nav-item {
         padding: 10px 0px;
+    }
+}
+@media (max-width: 800px){
+    .area-kv{
+        height: auto;
     }
 }
 @media (max-width: 768px) {
