@@ -374,7 +374,8 @@ b {
 .Bno.fancybox-content .close {
   border: none;
   height: 40px;
-  top: 20px; }
+  top: 20px;
+  right: 20px; }
 
 .Bno {
   font-size: 0px;
@@ -1272,7 +1273,7 @@ b {
 @media (max-width: 768px) {
   #sectionPorfessinal .field {
     width: 300px;
-    margin: 20px 0px; }
+    margin: 20px 5px; }
     #sectionPorfessinal .field .fieldContent {
       margin-left: 0px;
       padding-bottom: 10px;
