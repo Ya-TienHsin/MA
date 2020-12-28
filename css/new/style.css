@@ -1458,7 +1458,7 @@ b {
       margin-bottom: 100px;
       padding-top: 10px; }
   .Bno.fancybox-content {
-    padding: 0px; }
+    padding: 0px;height: 100%; }
     .Bno.fancybox-content .close {
       right: 20px; }
     .Bno.fancybox-content .close:before {
