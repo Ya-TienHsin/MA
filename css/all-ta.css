@@ -4652,7 +4652,8 @@ body {
 }
 #FAQ .faqContent dd hr {
   width: 100px;
-  margin-top: 0px;
+  margin: 0 auto;
+  margin-bottom: 9px;
   margin-left: 0px;
   border: 0px;
   border-bottom: 1px solid #14375B;
