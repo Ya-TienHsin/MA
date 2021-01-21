@@ -50,7 +50,7 @@
     margin: 0 auto;
 }
 .timeline-container::before{
-    height: 57%;
+    height: 53%;
 }
 .pc-max-width{
     position: relative;
