@@ -245,6 +245,11 @@
         padding: 10px 0px;
     }
 }
+@media(max-width:991px){
+    .timeline-container::before {
+        height: 58%;
+    }
+}
 @media (max-width: 800px){
     .area-kv{
         height: auto;
@@ -263,4 +268,14 @@
         background-color: #009e96;
     }
 
+}
+@media (max-width: 600px){
+    .timeline-container::before {
+        height: 63%;
+    }
+}
+@media (max-width: 400px){
+    .timeline-container::before {
+        height: 68%;
+    }
 }
