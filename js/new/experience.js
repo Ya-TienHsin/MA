@@ -41,7 +41,7 @@ $(document).ready(function () {
     }
     // 日期倒數
     var startDate = new Date();
-    var endDate = new Date(2021, 03, 31, 23, 59);
+    var endDate = new Date(2021, 2, 31);
     var spantime = (endDate - startDate) / 1000;
 
     function getString(dt) {
@@ -51,19 +51,23 @@ $(document).ready(function () {
 
     function cal() {
         spantime--;
-        var d = Math.floor(spantime / (24 * 3600));
+        var d = Math.floor(spantime / (24 * 3600)) + 1;
         var h = Math.floor((spantime % (24 * 3600)) / 3600);
         var m = Math.floor((spantime % 3600) / (60));
         var s = Math.floor(spantime % 60);
         str = d;
-        document.getElementById("pad").innerHTML = str;
-    };
+        if (spantime > 0) {
+            document.getElementById("pad").innerHTML = str;
+        } else {
+            document.getElementById("pad").innerHTML = 0;
+        }
+    }
 
     window.onload = function () {
         document.getElementById("start_pad").innerHTML = getString(startDate);
         document.getElementById("end_pad").innerHTML = getString(endDate);
         setInterval(cal, 1000);
-    };
+    }
     // AOS
     AOS.init({
         once: true
