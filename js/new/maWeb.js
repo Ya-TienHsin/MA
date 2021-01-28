@@ -104,7 +104,7 @@ $(document).ready(function () {
     // AOS
     AOS.init();
     // 日期倒數
-    var startDate = new Date(2021, 2, 30);
+    var startDate = new Date();
     var endDate = new Date(2021, 2, 31);
     var spantime = (endDate - startDate) / 1000;
 

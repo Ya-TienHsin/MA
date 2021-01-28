@@ -37,7 +37,20 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5LLQXL');
     </script>
-    <!-- End Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+	<style>
+		.mapImg{
+				display: none;
+			}
+		@media(max-width:768px){
+			.mapImg{
+				display: block;
+			}
+			.map video{
+				display: none;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -621,6 +634,9 @@ c0-1.3,1.1-2.4,2.4-2.4L56.8,55.6z" />
 										<source src="images/2_professional/map.mp4" type="video/mp4">
 										Your browser does not support the video tag.
 									</video>
+								</div>
+								<div class="mapImg">
+									<img src="images/2_professional/map.jpg" alt="">
 								</div>
 							</div>
 						</div>
