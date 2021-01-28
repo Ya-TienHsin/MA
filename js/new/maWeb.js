@@ -47,7 +47,7 @@ $(document).ready(function () {
     e = $(".question dt"), $(".question dd:not(:first)").hide(), e.click((function () {
         $(this).toggleClass("active"), $(this).next("dd").slideToggle("fast")
     }));
-    
+
     // 專業領域切換
     $(".Overseas").click(function () {
         $(".item").removeClass("show");
@@ -104,8 +104,8 @@ $(document).ready(function () {
     // AOS
     AOS.init();
     // 日期倒數
-    var startDate = new Date();
-    var endDate = new Date(2021, 03, 31, 23, 59);
+    var startDate = new Date(2021, 2, 30);
+    var endDate = new Date(2021, 2, 31);
     var spantime = (endDate - startDate) / 1000;
 
     function getString(dt) {
@@ -115,12 +115,16 @@ $(document).ready(function () {
 
     function cal() {
         spantime--;
-        var d = Math.floor(spantime / (24 * 3600));
+        var d = Math.floor(spantime / (24 * 3600)) + 1;
         var h = Math.floor((spantime % (24 * 3600)) / 3600);
         var m = Math.floor((spantime % 3600) / (60));
         var s = Math.floor(spantime % 60);
         str = d;
-        document.getElementById("pad").innerHTML = str;
+        if (spantime > 0) {
+            document.getElementById("pad").innerHTML = str;
+        } else {
+            document.getElementById("pad").innerHTML = 0;
+        }
     }
 
     window.onload = function () {
