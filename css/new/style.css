@@ -327,11 +327,6 @@ b span {
 #sectionKV .slider_wrap .main_slider .slick-slide:nth-child(3) .item_inner {
   background-image: url("../../images/1_kv/main.jpg");
 }
-
-#sectionKV .slider_wrap .main_slider .slick-slide:nth-child(4) .item_inner {
-  background-image: url("../../images/1_kv/main3.jpg");
-}
-
 #sectionKV .title {
   position: absolute;
   left: -50px;
