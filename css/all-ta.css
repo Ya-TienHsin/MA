@@ -4246,7 +4246,7 @@ body {
 #bgColor {
   /* background: #68c4c3; */
   border-radius: 100px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto 60px auto;
 }
 
@@ -4258,7 +4258,7 @@ body {
 #special ol {
   max-width: 555px;
   margin: 0 auto 20px auto;
-  padding-left: 0px;
+  padding-left: 20px;
 }
 
 #special {
@@ -4411,13 +4411,13 @@ body {
 .basic:before {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 67%;
   border-bottom: 2px #3ca29d solid;
   height: 25px;
   display: block;
   bottom: -40px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50.2%);
 }
 
 .secondPractice {
@@ -4429,7 +4429,7 @@ body {
 .secondPractice .practice {
   width: 45%;
   display: inline-block;
-  margin: 80px 20px;
+  margin: 80px 10px;
   margin-bottom: 0px;
 }
 
@@ -4545,7 +4545,7 @@ body {
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
 }
 
 #qualification ul li {
@@ -4581,6 +4581,9 @@ body {
 }
 .secondPractice .practice:nth-child(2) .l-title{
   color: #01b7ae;
+}
+.secondPractice .practice:nth-child(3) .l-title{
+  color: #62adad;
 }
 .secondPractice .practice:nth-child(1) .l-paragraph{
   border-top: 4px solid #24598E;
@@ -4662,6 +4665,66 @@ body {
 .nav-link{
   color: #6b6b6b;
 }
+@media(max-width:991px){
+  .secondPractice{
+    position: relative;
+    flex-direction: column;
+  }
+  .secondPractice .practice{
+    width: 100%;
+    margin: 60px 0px;
+    margin-bottom: 0px;
+  }
+  .secondPractice .practice:before {
+    border-right: 5px #24598E solid;
+    width: calc(50% - 50px);
+    height: 60px;
+    top: -60px;
+  }
+  .secondPractice::before {
+    content: "";
+    border-right: 5px #01b7ae solid;
+    height: 60px;
+    top: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .secondPractice .practice:nth-child(1):after {
+    content: "";
+    position: absolute;
+    border-right: 4px #b4d8d8 solid;
+    width: calc(50% + 50px);
+    height: 60px;
+    top: -60px;
+  }
+  .secondPractice .practice:nth-child(2):before {
+    width: calc(50% + 50px);
+    border-right: 4px #b4d8d8 solid;
+  }
+  .secondPractice .practice:nth-child(2)::after {
+    content: "";
+    border-right: 5px #01b7ae solid;
+    height: 60px;
+    top: -60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .secondPractice .practice:nth-child(3):before {
+    width: calc(50% + 50px);
+    border-right: 4px #b4d8d8 solid;
+  }
+  .basic:before{
+    display: none;
+  }
+  .basic:after{
+    display: none;
+  }
+  .ulAll{
+    width: 70% !important;
+  }
+}
 @media(max-width:768px){
   #FAQ .container{
     width: 90%;
@@ -4688,39 +4751,8 @@ body {
   .section-breif{
     margin-bottom: 0px
   }
-  .secondPractice{
-    flex-direction: column;
-  }
-  .secondPractice .practice{
-    width: 100%;
-    margin: 60px 0px;
-    margin-bottom: 0px;
-  }
-  .basic:before{
-    display: none;
-  }
-  .basic:after{
-    display: none;
-  }
-  .secondPractice .practice:before {
-    border-right: 5px #24598E solid;
-    width: calc(50% - 50px);
-    height: 60px;
-    top: -60px;
-  }
 
-  .secondPractice .practice:nth-child(1):after {
-    content: "";
-    position: absolute;
-    border-right: 4px #01b7ae solid;
-    width: calc(50% + 50px);
-    height: 60px;
-    top: -60px;
-  }
-  .secondPractice .practice:nth-child(2):before {
-    width: calc(50% + 50px);
-    border-right: 4px #01b7ae solid;
-  }
+
   .process1{
     width: 90%;
   }
