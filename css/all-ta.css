@@ -4401,7 +4401,7 @@ body {
 .basic:after {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 50.1%;
   border-right: 2px #3ca29d solid;
   height: 25px;
   display: block;
@@ -4576,20 +4576,17 @@ body {
   margin-top: 10px;
   font-size: 18px;
 }
-.secondPractice .practice:nth-child(1) .l-title{
-  color: #14375B;
-}
-.secondPractice .practice:nth-child(2) .l-title{
+.secondPractice .practice:nth-child(odd) .l-title{
   color: #01b7ae;
 }
-.secondPractice .practice:nth-child(3) .l-title{
-  color: #62adad;
+.secondPractice .practice:nth-child(2) .l-title{
+  color: #14375B;
 }
-.secondPractice .practice:nth-child(1) .l-paragraph{
+.secondPractice .practice:nth-child(2) .l-paragraph{
   border-top: 4px solid #24598E;
 }
 
-.secondPractice .practice:nth-child(2) .l-paragraph{
+.secondPractice .practice:nth-child(odd) .l-paragraph{
   border-top: 4px solid #01b7ae;
 }
 #FAQ{
