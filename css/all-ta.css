@@ -4398,7 +4398,7 @@ body {
 #bgColor .section-title{
   padding-bottom: 30px;
 }
-.basic:after {
+/* .basic:after {
   content: "";
   position: absolute;
   width: 50.1%;
@@ -4406,7 +4406,7 @@ body {
   height: 25px;
   display: block;
   bottom: -40px;
-}
+} */
 
 .basic:before {
   content: "";
@@ -4444,7 +4444,8 @@ body {
 }
 
 .secondPractice .practice:nth-child(2):before {
-  width: calc(50% + 1px);
+  top: -80px;
+  height: 66px;
 }
 
 .l-title {
@@ -4673,14 +4674,14 @@ body {
     margin-bottom: 0px;
   }
   .secondPractice .practice:before {
-    border-right: 5px #24598E solid;
+    border-right: 5px #01b7ae solid;
     width: calc(50% - 50px);
     height: 60px;
     top: -60px;
   }
   .secondPractice::before {
     content: "";
-    border-right: 5px #01b7ae solid;
+    border-right: 5px #24598E solid;
     height: 60px;
     top: 0px;
     position: absolute;
@@ -4690,18 +4691,20 @@ body {
   .secondPractice .practice:nth-child(1):after {
     content: "";
     position: absolute;
-    border-right: 4px #b4d8d8 solid;
+    border-right: 5px #01b7ae solid;
     width: calc(50% + 50px);
     height: 60px;
     top: -60px;
   }
   .secondPractice .practice:nth-child(2):before {
     width: calc(50% + 50px);
-    border-right: 4px #b4d8d8 solid;
+    border-right: 5px #01b7ae solid;
+    top: -60px;
+    height: 60px;
   }
   .secondPractice .practice:nth-child(2)::after {
     content: "";
-    border-right: 5px #01b7ae solid;
+    border-right: 5px #24598E solid;
     height: 60px;
     top: -60px;
     position: absolute;
@@ -4710,7 +4713,7 @@ body {
   }
   .secondPractice .practice:nth-child(3):before {
     width: calc(50% + 50px);
-    border-right: 4px #b4d8d8 solid;
+    border-right: 5px #01b7ae solid;
   }
   .basic:before{
     display: none;
