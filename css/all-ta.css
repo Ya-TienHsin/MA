@@ -4577,17 +4577,10 @@ body {
   margin-top: 10px;
   font-size: 18px;
 }
-.secondPractice .practice:nth-child(odd) .l-title{
+.secondPractice .practice .l-title{
   color: #01b7ae;
 }
-.secondPractice .practice:nth-child(2) .l-title{
-  color: #14375B;
-}
-.secondPractice .practice:nth-child(2) .l-paragraph{
-  border-top: 4px solid #24598E;
-}
-
-.secondPractice .practice:nth-child(odd) .l-paragraph{
+.secondPractice .practice .l-paragraph{
   border-top: 4px solid #01b7ae;
 }
 #FAQ{
@@ -4681,7 +4674,7 @@ body {
   }
   .secondPractice::before {
     content: "";
-    border-right: 5px #24598E solid;
+    border-right: 5px #01b7ae solid;
     height: 60px;
     top: 0px;
     position: absolute;
@@ -4704,7 +4697,7 @@ body {
   }
   .secondPractice .practice:nth-child(2)::after {
     content: "";
-    border-right: 5px #24598E solid;
+    border-right: 5px #01b7ae solid;
     height: 60px;
     top: -60px;
     position: absolute;
