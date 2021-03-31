@@ -1267,12 +1267,12 @@ b span {
   margin-top: 0px;
 }
 
-.experience .secondTab dd {
+.experience .secondTab li {
   width: auto;
   margin: 0px 10px;
 }
 
-.experience .secondTab dd a {
+.experience .secondTab li a {
   font-size: 20px;
   font-weight: 500;
   background-color: #fff;
@@ -1281,12 +1281,12 @@ b span {
   border-radius: 8px;
 }
 
-.experience .secondTab dd a:hover {
+.experience .secondTab li a:hover {
   background-color: #fff;
   color: #14375B;
 }
 
-.experience .secondTab dd.active a {
+.experience .secondTab li.active a {
   background-color: #14375B;
   border: none;
   color: #fff;
@@ -1527,7 +1527,7 @@ b span {
 .fancybox-content .close {
   position: absolute;
   right: 40px;
-  top: 0px;
+  top: 20px;
   background: transparent;
   color: black;
   font-size: 0px;
@@ -2431,4 +2431,17 @@ b span {
   .map video {
     display: none;
   }
+}
+
+.tabs{
+  border:none;
+}
+.experience .secondTab li{
+  display: inline-block;
+  float: none;
+}
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true]{
+  background-color: #14375B !important;
+  border: none !important;
+  color: #fff !important;
 }
